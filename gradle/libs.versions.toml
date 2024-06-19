@@ -6,10 +6,9 @@ targetSdk = "34"
 java = "17"
 
 agp = "8.3.2"
-kotlin = "1.9.24"
+kotlin = "2.0.0"
 compose = "1.6.8"
 compose-material3 = "1.2.1"
-compose-compiler = "1.5.14"
 
 [libraries]
 activity-compose = "androidx.activity:activity-compose:1.9.0"
@@ -23,6 +22,7 @@ accompanist-systemuicontroller = "com.google.accompanist:accompanist-systemuicon
 android-library = { id = "com.android.library", version.ref = "agp" }
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 com-diffplug-spotless = "com.diffplug.spotless:6.25.0"
 com-vanniktech-maven-publish = "com.vanniktech.maven.publish:0.28.0"
 io-gitlab-arturbosch-detekt = "io.gitlab.arturbosch.detekt:1.23.6"

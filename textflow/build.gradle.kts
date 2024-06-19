@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.compose.compiler)
     alias(libs.plugins.android.library)
     alias(libs.plugins.com.vanniktech.maven.publish)
 }
@@ -26,9 +27,6 @@ android {
     }
     buildFeatures {
         compose = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
     }
     kotlinOptions {
         freeCompilerArgs = freeCompilerArgs +
